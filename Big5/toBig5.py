@@ -1,19 +1,12 @@
+from big5_ranges import bfi_ranges
+
 # Mapping emotions for each Big Five personality trait
 big5_map = {
     "Neuroticism": ["sadness", "anger", "fear", "disgust", "annoyance", "nervousness", "grief", "disgust", "embarrassment", "disappointment", "disapproval", "remorse"],
-    "Extraversion": ["joy", "admimration", "excitement", "amusement", "optimism", "pride"],
-    "Openness": ["joy", "curiosity", "surprise", "realization", "desire", "confusion", "excitement", "amusement"],
-    "Agreeableness": ["joy", "love" "gratitude", "caring", "admimration"],
-    "Conscientiousness": ["disapproval", "remorse", "relief", "approval", "neutral"]
-}
-
-# Point range based on BFI-44
-bfi_ranges = {
-    "Neuroticism": (8, 40),
-    "Extraversion": (7, 35),
-    "Openness": (10, 50),
-    "Agreeableness": (9, 45),
-    "Conscientiousness": (9, 45)
+    "Extraversion": ["joy", "admimration", "excitement", "amusement", "optimism", "approval", "realization", "pride"],
+    "Openness": ["curiosity", "surprise", "desire", "confusion", "excitement", "amusement"],
+    "Agreeableness": ["love" "gratitude", "caring", "admimration"],
+    "Conscientiousness": ["disapproval", "remorse", "relief", "neutral"]
 }
 
 # Function to calculate the Big Five personality traits from the GoEmotions results
@@ -28,7 +21,7 @@ def calculate_big5(emotions_results):
     return big5_scores
 
 # Function to scale GoEmotions scores to BFI-44
-def scale_scores(go_emotions_scores, bfi_ranges):
+def scale_scores(go_emotions_scores):
     bfi_scaled_scores = {}
     
     for trait, value in go_emotions_scores.items():
