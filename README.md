@@ -1,10 +1,13 @@
 # Big5PersonalityTraits_Detector
 ## Overview
 The Big5PersonalityTraits_Detector is a project designed to analyze text and determine the Big Five personality traits of the author. The Big Five personality traits are Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.
+The model for emotion detector in text is a model trained from roberta-base on the go_emotions dataset for multi-label classification, from [SamLowe/roberta-base-go_emotions] (https://huggingface.co/SamLowe/roberta-base-go_emotions)
 
 ## Features
+- Initial BFI-44 test for the initial personality
 - Analyze text to detect personality traits
 - Generate a detailed report of the personality analysis
+- Show goals for your mental health
 - Easy to use and integrate into other projects
 
 ## Installation

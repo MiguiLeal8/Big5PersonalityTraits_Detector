@@ -1,4 +1,4 @@
-from big5_ranges import bfi_ranges
+from Big5.big5_ranges import bfi_ranges
 
 # Mapping emotions for each Big Five personality trait
 big5_map = {

@@ -1,4 +1,4 @@
-from big5_ranges import bfi_ranges
+from Big5.big5_ranges import bfi_ranges
 
 def get_objectives(big5_scores, language):
     objetives = []
