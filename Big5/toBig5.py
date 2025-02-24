@@ -2,11 +2,11 @@ from big5_ranges import bfi_ranges
 
 # Mapping emotions for each Big Five personality trait
 big5_map = {
-    "Neuroticism": ["sadness", "anger", "fear", "disgust", "annoyance", "nervousness", "grief", "disgust", "embarrassment", "disappointment", "disapproval", "remorse"],
     "Extraversion": ["joy", "admimration", "excitement", "amusement", "optimism", "approval", "realization", "pride"],
-    "Openness": ["curiosity", "surprise", "desire", "confusion", "excitement", "amusement"],
     "Agreeableness": ["love" "gratitude", "caring", "admimration"],
-    "Conscientiousness": ["disapproval", "remorse", "relief", "neutral"]
+    "Conscientiousness": ["disapproval", "remorse", "relief", "neutral"],
+    "Neuroticism": ["sadness", "anger", "fear", "disgust", "annoyance", "nervousness", "grief", "disgust", "embarrassment", "disappointment", "disapproval", "remorse"],
+    "Openness": ["curiosity", "surprise", "desire", "confusion", "excitement", "amusement"]
 }
 
 # Function to calculate the Big Five personality traits from the GoEmotions results

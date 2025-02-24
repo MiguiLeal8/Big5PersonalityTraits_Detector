@@ -20,8 +20,10 @@ def get_emotions(texto):
     inputs = tokenizer(texto, return_tensors="pt", truncation=True)
     outputs = model(**inputs)
     scores = torch.softmax(outputs.logits, dim=1).detach().cpu().numpy()[0]
-    #logits = outputs.logits.detach().cpu().numpy()[0]
-    #scores = softmax(logits)
+    '''
+    logits = outputs.logits.detach().cpu().numpy()[0]
+    scores = softmax(logits)
+    '''
     labels = model.config.id2label
     results = {labels[i]: float(scores[i]) for i in range(len(scores))}
     return results

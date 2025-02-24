@@ -26,19 +26,15 @@ def updatePersonality(text, big5_previous_points, alpha, language):
     big5_results = calculate_big5(emotions_results)
 
     big5_scalated = scale_scores(big5_results)
-
-    big5_updated = update_big5(big5_previous_points, big5_scalated, alpha)
-    print("\nPrevious personality traits:\n", big5_previous_points)
     sorted_emotions = dict(sorted(emotions_results.items(), key=lambda item: item[1], reverse=True))
-    print("Emotions from text (sorted):\n", sorted_emotions)
-    print("Personality traits from text:\n", big5_scalated)
+    '''
+    if language=="es":
+        print("Emociones del texto (ordenadas):\n", sorted_emotions)
+        print("Rasgos de personalidad del texto:\n", big5_scalated)
+    else:
+        print("Emotions from text (sorted):\n", sorted_emotions)
+        print("Personality traits from text:\n", big5_scalated)
+    '''
+    big5_updated = update_big5(big5_previous_points, big5_scalated, alpha)
 
     return big5_updated
-
-big5_previous_points = {
-    "Neuroticism": 20,
-    "Extraversion": 25,
-    "Openness": 40,
-    "Agreeableness": 30,
-    "Conscientiousness": 35
-}
