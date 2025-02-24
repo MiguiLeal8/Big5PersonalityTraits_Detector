@@ -25,5 +25,5 @@ else:
     text = input("Please write some sentences: ").strip()
 
 print("Updated Big5 personality traits:\n", updatePersonality(text, big5_previous_points, alpha, language))
-print("\nMax text emotion:", get_max_emotion(text, language))
+print("Max text emotion:", get_max_emotion(text, language))
 print("Max text big5 trait:", get_max_big5(text, language))

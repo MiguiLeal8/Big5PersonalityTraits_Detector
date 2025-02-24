@@ -1,10 +1,10 @@
 # Mapping emotions for each Big Five personality trait
 big5_map = {
-    "Neuroticism": ["sadness", "anger", "fear", "disgust", "annoyance", "nervousness", "grief", "disgust", "embarrassment", "disappointment"],
+    "Neuroticism": ["sadness", "anger", "fear", "disgust", "annoyance", "nervousness", "grief", "disgust", "embarrassment", "disappointment", "disapproval", "remorse"],
     "Extraversion": ["joy", "admimration", "excitement", "amusement", "optimism", "pride"],
-    "Openness": ["curiosity", "surprise", "realization", "desire", "confusion"],
-    "Agreeableness": ["love" "gratitude", "caring", "approval"],
-    "Conscientiousness": ["disapproval", "remorse", "relief", "neutral"]
+    "Openness": ["joy", "curiosity", "surprise", "realization", "desire", "confusion", "excitement", "amusement"],
+    "Agreeableness": ["joy", "love" "gratitude", "caring", "admimration"],
+    "Conscientiousness": ["disapproval", "remorse", "relief", "approval", "neutral"]
 }
 
 # Point range based on BFI-44

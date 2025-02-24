@@ -34,6 +34,7 @@ def updatePersonality(text, big5_previous_points, alpha, language):
 
     big5_puntajes_actualizados = update_big5(big5_previous_points, big5_scalated, alpha)
     print("\nPrevious personality traits:\n", big5_previous_points)
+    print("Emotions from text:\n", emotions_results)
     print("Personality traits from text:\n", big5_scalated)
 
     json_big5 = json.dumps(big5_puntajes_actualizados, indent=4)
